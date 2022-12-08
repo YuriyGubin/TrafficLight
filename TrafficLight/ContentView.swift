@@ -8,15 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var tapCounter = 0
     var body: some View {
         ZStack {
             Color(.black)
                 .ignoresSafeArea()
             VStack {
                 Spacer()
-                LightView(color: .red)
-                LightView(color: .yellow)
-                LightView(color: .green)
+                LightView(color: .red, opacity: 0.5)
+                LightView(color: .yellow, opacity: 0.5)
+                LightView(color: .green, opacity: 0.5)
                 Spacer()
                 Button(action: switchColor) {
                     Text("START")
@@ -30,6 +32,7 @@ struct ContentView: View {
                         ))
                         .background(Color.blue)
                         .clipShape(Capsule())
+                        .overlay(Capsule().stroke(Color.white, lineWidth: 3))
                 }
                 Spacer()
             }
@@ -37,6 +40,8 @@ struct ContentView: View {
     }
     
     func switchColor() {
+        
+        
         
     }
 }
