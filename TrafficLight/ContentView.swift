@@ -17,16 +17,17 @@ struct ContentView: View {
     
     @State private var buttonTitle = "START"
     
-    @State private var redOpacity      = 0.2
-    @State private var yellowOpacity   = 0.2
-    @State private var greenOpacity    = 0.2
+    @State private var redOpacity      = 0.3
+    @State private var yellowOpacity   = 0.3
+    @State private var greenOpacity    = 0.3
     
     @State private var lightColor = LightColor.red
     
     private let isOn    = 1.0
-    private let isOff   = 0.2
+    private let isOff   = 0.3
     
     var body: some View {
+        
         ZStack {
             Color(.black)
                 .ignoresSafeArea()
@@ -34,9 +35,21 @@ struct ContentView: View {
             VStack {
                 Spacer()
                 
-                LightView(color: .red, opacity: redOpacity)
-                LightView(color: .yellow, opacity: yellowOpacity)
-                LightView(color: .green, opacity: greenOpacity)
+                LightView(
+                    color: .red,
+                    opacity: redOpacity,
+                    shadowOpacity: redOpacity
+                )
+                LightView(
+                    color: .yellow,
+                    opacity: yellowOpacity,
+                    shadowOpacity: yellowOpacity
+                )
+                LightView(
+                    color: .green,
+                    opacity: greenOpacity,
+                    shadowOpacity: greenOpacity
+                )
                 
                 Spacer()
                 
@@ -56,7 +69,7 @@ struct ContentView: View {
         }
     }
     
-    func switchColor() {
+    private func switchColor() {
         if buttonTitle == "START" {
             buttonTitle = "NEXT"
         }
