@@ -17,14 +17,14 @@ struct ContentView: View {
     
     @State private var buttonTitle = "START"
     
-    @State private var redOpacity      = 0.3
-    @State private var yellowOpacity   = 0.3
-    @State private var greenOpacity    = 0.3
+    @State private var redOpacity = 0.3
+    @State private var yellowOpacity = 0.3
+    @State private var greenOpacity = 0.3
     
     @State private var lightColor = LightColor.red
     
-    private let isOn    = 1.0
-    private let isOff   = 0.3
+    private let isOn = 1.0
+    private let isOff = 0.3
     
     var body: some View {
         
@@ -53,7 +53,7 @@ struct ContentView: View {
                 
                 Spacer()
                 
-                Button(action: switchColor) {
+                Button(action: switchLightColor) {
                     Text(buttonTitle)
                         .foregroundColor(.white)
                         .font(.largeTitle)
@@ -69,7 +69,7 @@ struct ContentView: View {
         }
     }
     
-    private func switchColor() {
+    private func switchLightColor() {
         if buttonTitle == "START" {
             buttonTitle = "NEXT"
         }
