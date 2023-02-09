@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var switchButton: UIButton!
     
-    private var currentColor = CurrentColor.red
+    private var currentColor = CurrentColor.green
     
     private let lightIsOn: CGFloat = 1
     private let lightIsOff: CGFloat = 0.3
@@ -39,7 +39,6 @@ class ViewController: UIViewController {
         }
         
         switch currentColor {
-            
         case .red:
             redView.alpha = lightIsOff
             yellowView.alpha = lightIsOn
@@ -55,18 +54,13 @@ class ViewController: UIViewController {
         }
     }
     
-
     private func setupViews() {
         switchButton.layer.cornerRadius = 10
         
         redView.alpha = lightIsOff
         yellowView.alpha = lightIsOff
         greenView.alpha = lightIsOff
-        
-        
     }
-    
-    
 }
 
 extension ViewController {

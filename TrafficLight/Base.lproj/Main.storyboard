@@ -37,9 +37,12 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cl6-0N-5oz">
-                                <rect key="frame" x="123" y="693" width="147" height="45"/>
+                                <rect key="frame" x="116.66666666666669" y="691" width="160" height="52"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="Pi1-eY-vjI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="START">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
@@ -52,12 +55,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Cl6-0N-5oz" secondAttribute="bottom" constant="80" id="LyQ-IN-nRL"/>
+                            <constraint firstItem="Cl6-0N-5oz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0B7-2v-vRL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Cl6-0N-5oz" secondAttribute="bottom" constant="75" id="7wg-wh-GGi"/>
                             <constraint firstItem="Wk4-kF-rLa" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.164918" id="Qtv-69-HKX"/>
                             <constraint firstItem="AYg-FR-YSO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="djn-uO-pmN"/>
                             <constraint firstItem="AYg-FR-YSO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dpe-aG-E95"/>
-                            <constraint firstItem="Cl6-0N-5oz" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.373333" id="kpj-39-wlY"/>
-                            <constraint firstItem="Cl6-0N-5oz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nla-U5-vps"/>
                         </constraints>
                     </view>
                     <connections>
