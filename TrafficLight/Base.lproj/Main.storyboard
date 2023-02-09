@@ -50,7 +50,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Cl6-0N-5oz" secondAttribute="bottom" constant="80" id="LyQ-IN-nRL"/>
                             <constraint firstItem="Wk4-kF-rLa" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.164918" id="Qtv-69-HKX"/>
