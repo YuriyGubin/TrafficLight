@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var switchButton: UIButton!
     
-    private var currentColor = CurrentColor.green
+    private var currentColor = CurrentColor.red
     
     private let lightIsOn: CGFloat = 1
     private let lightIsOff: CGFloat = 0.3
@@ -40,16 +40,16 @@ class ViewController: UIViewController {
         
         switch currentColor {
         case .red:
-            redView.alpha = lightIsOff
-            yellowView.alpha = lightIsOn
+            redView.alpha = lightIsOn
+            greenView.alpha = lightIsOff
             currentColor = .yellow
         case .yellow:
-            yellowView.alpha = lightIsOff
-            greenView.alpha = lightIsOn
+            yellowView.alpha = lightIsOn
+            redView.alpha = lightIsOff
             currentColor = .green
         case .green:
-            greenView.alpha = lightIsOff
-            redView.alpha = lightIsOn
+            greenView.alpha = lightIsOn
+            yellowView.alpha = lightIsOff
             currentColor = .red
         }
     }
@@ -64,7 +64,7 @@ class ViewController: UIViewController {
 }
 
 extension ViewController {
-    enum CurrentColor {
+    private enum CurrentColor {
         case red, yellow, green
     }
 }
